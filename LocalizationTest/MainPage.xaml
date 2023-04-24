@@ -14,30 +14,34 @@
                 ColumnDefinitions="*,*">
                 <Label
                     BackgroundColor="Green"
-                    Text="Grid 1st Column" />
+                    Text="Grid 1st Column" 
+                    HorizontalOptions="Fill"
+                    HorizontalTextAlignment="Start"/>
                 <Label
                     Grid.Column="1"
                     BackgroundColor="Yellow"
-                    Text="Grid 2nd Column" />
+                    Text="Grid 2nd Column" 
+                    HorizontalOptions="Fill"
+                    HorizontalTextAlignment="Start"/>
             </Grid>
 
             <Image
                 Source="dotnet_bot.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Start" />
 
             <Label
                 Text="{local:Translate Text=Hello}"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Start" />
 
             <Label
                 x:Name="DateLabel"
                 SemanticProperties.HeadingLevel="Level1"
                 FontSize="32"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Start" />
 
             <Button
                 x:Name="CounterBtn"
